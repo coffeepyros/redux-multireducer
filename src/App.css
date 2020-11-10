@@ -1,38 +1,80 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap");
+* {
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+}
+body {
+  padding: 1rem;
+  background-color: #ccc;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+label {
+  font-weight: 600;
+  display: inline-block;
+  width: 100px;
+}
+fieldset,
+section {
+  border: 1px dashed #999;
+  padding: 1rem;
+  background-color: #d8d8d8;
+}
+fieldset:nth-child(n + 1),
+section {
+  margin-top: 1rem;
+}
+input {
+  padding: 0.5rem;
+  background-color: rgba(255, 228, 196, 0.5);
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+}
+button {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin-left: 0.67rem;
+  border-radius: 0.5rem;
+  border: 1px solid #999;
+  background-color: #ccf;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(240, 100%, 93%);
+}
+button:active {
+  background-color: hsl(240, 100%, 87%);
+}
+strong {
+  font-weight: 600;
+}
+#display {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+#display .card {
+  width: 120px;
+  height: 160px;
+  margin: 0.5rem;
+  padding: 0.5rem;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: #555;
+  box-shadow: 4px 4px 0 #000;
+  color: #ccf;
 }
-
-.App-link {
-  color: #61dafb;
+.card h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: normal;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card p {
+  margin: 0.5rem 0;
 }
